@@ -25,7 +25,6 @@ gulp.task('server', getTask('server'));
 gulp.task('html', getTask('html'));
 gulp.task('styles', getTask('styles'));
 gulp.task('webpack', getTask('webpack'));
-gulp.task('svgsprite', getTask('svgsprite'));
 gulp.task('imagemin', getTask('imagemin'));
 gulp.task('ghpages', getTask('ghpages'));
 gulp.task('zip', getTask('zip'));
@@ -36,7 +35,6 @@ gulp.task('watch', (done) => {
   gulp.watch(`${config.src.html}/**/*.html`, gulp.series('html'));
   gulp.watch(`${config.src.sass}/**/*.{sass,scss}`, gulp.series('styles'));
   gulp.watch(`${config.src.js}/**/*.js`, gulp.series('webpack'));
-  gulp.watch(`${config.src.iconsSvg}/*.svg`, gulp.series('svgsprite'));
   gulp.watch([
     `${config.src.fonts}/**/*`,
     `${config.src.img}/**/*`,

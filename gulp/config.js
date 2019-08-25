@@ -16,7 +16,6 @@ const config = {
     sass    : `${srcPath}/scss`,
     js      : `${srcPath}/js`,
     img     : `${srcPath}/img`,
-    iconsSvg: `${srcPath}/icons`,
     fonts   : `${srcPath}/fonts`,
     media   : `${srcPath}/media`
   },
@@ -26,7 +25,6 @@ const config = {
     css   : `${destPath}/css`,
     js    : `${destPath}/js`,
     img   : `${destPath}/img`,
-    icons : `${destPath}/img`,
     fonts : `${destPath}/fonts`,
     media : `${destPath}/media`
   },
