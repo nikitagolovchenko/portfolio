@@ -5,20 +5,24 @@
 @import 'helpers/functions';
 
 // vendors
-// @import 'vendors/masonry';
+// @import 'vendors/bootstrap';
 
 // base
 @import 'base/reset';
+@import 'base/fonts';
+@import 'base/icons';
 @import 'base/core';
 
 // layout
-// @import 'layout/header';
+@import 'layout/header';
+@import 'layout/intro';
 // @import 'layout/footer';  
 // @import 'layout/forms';  
 
 // components
-// @import 'components/buttons';
-// @import 'components/dropdown';
+@import 'components/socials';
+@import 'components/burger';
+@import 'components/photo1';
 // @import 'components/slider';
 
 // pages

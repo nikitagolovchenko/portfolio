@@ -1,0 +1,44 @@
+.intro {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    background-color: $darken-blue;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        background: url(../../img/intro/intro-bg.png) no-repeat;
+        background-size: contain;
+        background-position: bottom;    
+    }
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        min-width: 101%; 
+        min-height: 101%;
+        width: auto;
+        height: auto; 
+
+        @supports (object-fit: cover) {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include center(x, y);
+        z-index: 15;
+    }
+
+    
+}

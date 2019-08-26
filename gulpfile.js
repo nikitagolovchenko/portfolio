@@ -13,7 +13,6 @@ const buildTasks = () => {
       'html',
       'styles',
       'webpack',
-      'svgsprite'
     ),
     'copy'
   ];

@@ -4,8 +4,11 @@ html, body {
     font-size: $body-font-size;
     font-weight: $body-font-weight;
     background-color: $body-bg;
-
     min-width: 320px;
+
+    @media (min-width: $screen-md) {
+        font-size: 16px;
+    }
 }
 
 .wrapper {
@@ -17,7 +20,7 @@ html, body {
 .container {
     max-width: rem(1200px);
     margin: 0 auto;
-    padding: 0 rem(15px);
+    padding: 0 rem(10px);
 }
 
 a {
@@ -25,4 +28,10 @@ a {
     vertical-align: top;
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
