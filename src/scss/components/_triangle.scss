@@ -1,0 +1,22 @@
+.triangle {
+    display: flex;
+
+    &-left, &-right {
+        width: 50%;
+        height: rem(35px);
+        display: block;
+        fill: $triangle-fill;
+
+        @media (min-width: $screen-sm) {
+            height: rem(45px);
+        }
+
+        @media (min-width: $screen-lg) {
+            height: rem(60px);
+        }
+
+        @media (min-width: $screen-xl) {
+            height: rem(80px);
+        }
+    }
+}

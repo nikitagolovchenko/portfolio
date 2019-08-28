@@ -18,4 +18,25 @@ $(document).ready(function() {
         burger.removeActive();
     });
 
+
+    
+    // const circle = document.querySelector('.progress-ring__circle');
+    // const radius = circle.r.baseVal.value;  // берем значение радиуса из SVG объекта
+    // const circumference = 2 * Math.PI * radius; // получаем длину окружности 
+    // const input = document.querySelector('.percent');
+
+    // input.addEventListener('change', function() {
+    //     setProgress(input.value);
+    // })
+
+    // circle.style.strokeDasharray = `${circumference} ${circumference}`; // разбиваем обводку круга на отрезки( длина_отрезков отступ)
+    // circle.style.strokeDashoffset = circumference; // задаем сдвиг для пунктирной обводки равным длине окружности (т.е круга видно не будет)
+
+    // function setProgress(percent) {
+    //     const offset = circumference - percent / 100 * circumference;
+    //     circle.style.strokeDashoffset = offset;
+    // }
+
+    // setProgress(15);
+
 });

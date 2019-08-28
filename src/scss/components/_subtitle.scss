@@ -1,0 +1,18 @@
+.subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(21px);
+    font-weight: $bold;
+    position: relative;
+    padding: rem(20px) rem(65px);
+    margin-bottom: rem(20px);
+
+    &:after {
+        @include center(true, false);
+        bottom: 0;
+        content: "";
+        width: rem(60px);
+        height: 3px;
+        background-color: $gray;
+    }
+}

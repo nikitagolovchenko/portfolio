@@ -4,6 +4,7 @@
     height: 100vh;
     background-color: $darken-blue;
     overflow: hidden;
+    color: $intro-color;
 
     &__bg {
         position: absolute;
@@ -33,12 +34,46 @@
     }
 
     &__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include center(x, y);
+        width: 100%;
+        @include center(true);
+        top: 45%;
         z-index: 15;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    &__name {
+        font-size: rem(21px);
+        font-weight: $medium;
+        margin-bottom: rem(10px);
+
+        @media (min-width: $screen-md) {
+            font-size: rem(35px);
+        }
     }
 
-    
+    &__arrow {
+        z-index: 15;
+        bottom: rem(50px);
+        @include center(true, false);
+        border: 0;
+        background-color: transparent;
+        color: rgba($white, 0.7);
+        cursor: pointer;
+        padding: 0;
+        display: block;
+        
+        &-down {
+            font-size: rem(25px);
+        }
+    }
+
+    &__triangle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 15;
+    }
 }

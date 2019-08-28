@@ -1,4 +1,7 @@
 .photo1 {
+    position: relative;
+    margin-bottom: rem(35px);
+
     &__inner {
         width: rem(140px);
         height: rem(140px);
@@ -17,11 +20,9 @@
 
     &__svg {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        @include center(x, y);
+        @include center(true);
         width: rem(300px);
-        height: rem(300px);
+        height: rem(200px);
         --svg-color: rgba(255, 255, 255, 0.2);
     }
 }

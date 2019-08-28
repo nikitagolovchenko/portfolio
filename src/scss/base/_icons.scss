@@ -1,16 +1,15 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icons/icomoon.eot?dy2jjh');
-  src: url('../fonts/icons/icomoon.eot?dy2jjh#iefix') format('embedded-opentype'),
-    url('../fonts/icons/icomoon.ttf?dy2jjh') format('truetype'),
-    url('../fonts/icons/icomoon.woff?dy2jjh') format('woff'),
-    url('../fonts/icons/icomoon.svg?dy2jjh#icomoon') format('svg');
+  src:  url('../fonts/icons/icomoon.eot?bdmui1');
+  src:  url('../fonts/icons/icomoon.eot?bdmui1#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?bdmui1') format('truetype'),
+    url('../fonts/icons/icomoon.woff?bdmui1') format('woff'),
+    url('../fonts/icons/icomoon.svg?bdmui1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -25,13 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-down:before {
+  content: "\e903";
+}
 .icon-github:before {
   content: "\e900";
 }
 .icon-linkedin:before {
   content: "\e901";
 }
-
 .icon-vk:before {
   content: "\e902";
 }

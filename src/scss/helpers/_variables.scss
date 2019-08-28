@@ -1,6 +1,7 @@
 $white:                     #fff;
 $beige:                     #f2f0e8;
 $gray:                      #474b57;
+$gray-light:                #dfdcd5;
 $blue:                      #165ad1;
 $dark-blue:                 #243994;
 $darken-blue:               #223b65;
@@ -11,6 +12,8 @@ $hover-color:               $blue;
 
 $font-size-base:            14px;
 
+$line-height-base:          1.5em;
+
 
 $sansus_webissimo:         'sansus_webissimo', sans-serif;
 $Roboto:                   'Roboto', sans-serif;
@@ -19,6 +22,7 @@ $font-family-base:          $Roboto;
 
 $light:                     300;
 $regular:                   400;
+$medium:                    500;
 $bold:                      700;
 $font-weight-base:          $regular;
 
@@ -38,12 +42,25 @@ $body-color:                $primary-color;
 $body-font-family:          $font-family-base;
 $body-font-size:            $font-size-base;
 $body-font-weight:          $font-weight-base;
+$body-line-height:          $line-height-base;
 $body-bg:                   $beige;
 
 // --- burger ---
 $burger-bg:                 $secondary-color;
 $burger-radius:             $border-radius-base;
 
-// --- socials ----
+// --- socials ---
 $socials-color:             $secondary-color;
 $socials-hover:             $hover-color;
+
+// --- intro ---
+$intro-color:               $secondary-color;
+
+// --- triangle --- 
+$triangle-fill:             $beige;
+
+// --- about ---
+$about-font-family:         $sansus_webissimo;
+
+// --- progress-ring ---
+$progress-ring-color:      $hover-color;
