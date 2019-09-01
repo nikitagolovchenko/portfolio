@@ -4,7 +4,14 @@ import burgerMenu from './components/burgerMenu';
 $(document).ready(function() {
     
     const $burger = $('#burger');
+    const $preloader = $('#preloader');
+    const $wrapper = $('#wrapper');
     const burger = new burgerMenu($burger);
+
+    $(window).on('load', function() {
+        $preloader.hide();
+        $wrapper.css('opacity', '1');
+    });
 
     
     $($burger).on('click', function(e) {

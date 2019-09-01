@@ -16,5 +16,14 @@
         &:hover {
             color: $socials-hover;
         }
+
+        &--gray {
+            color: $gray-medium;
+            transition: color 0.3s linear;
+
+            &:hover {
+                color: $white;
+            }
+        }
     }
 }

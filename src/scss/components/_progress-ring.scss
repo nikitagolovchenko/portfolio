@@ -8,7 +8,7 @@
         stroke: $progress-ring-color;
 
         stroke-dasharray: 251 251; 
-        stroke-dashoffset: calc(251 - (75 / 100 * 251));  //дл.окружности - нужный_процент / 100 * дл.окружности
+        stroke-dashoffset: calc(251 - (15 / 100 * 251));  //длина_окружности - нужный_процент / 100 * длина_окружности
     }
 
     &__circle-static {
@@ -16,7 +16,9 @@
     }
 
     &__name {
+        max-width: rem(60px);
         @include center(true, true);
+        font-size: rem(12px);
         font-weight: $medium;
         color: $progress-ring-color;
         text-align: center;

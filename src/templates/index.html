@@ -1,6 +1,111 @@
-{% set title = "Index" %}
+{% set title = "About me" %}
 {% extends "layouts/main.html" %}
 
 {% block content %}
+    <section class="about">
+        <div class="about__me">
+            <div class="container">
+                <h1 class="about__title">Обо мне</h1> 
+                <div class="about__photo">
+                    <img src="../img/about/photo.jpg" alt="photo">
+                </div>
+                <h2 class="subtitle">Кто я</h2>
+                <p class="about__text">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+                <p class="about__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
+            </div>
+        </div>
 
+        <div class="about__my-skills">
+            <div class="container">
+                <h2 class="subtitle">Чем я могу быть вам полезен</h2>
+                <p class="about__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+
+                <h3 class="about__progress-title">Frontend</h3>
+                <div class="about__progress">
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">HTML5</p>
+                    </div>
+
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">CSS3</p>
+                    </div>
+
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">JavaScript & jQuery</p>
+                    </div>
+
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">SASS</p>
+                    </div>
+                </div>
+
+                <h3 class="about__progress-title">WorkFlow</h3>
+                <div class="about__progress">
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">Git</p>
+                    </div>
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">Gulp</p>
+                    </div>
+                    <div class="about__inner progress-ring">
+                        <svg class="about__item progress-ring__item" width="120" height="120" viewBox="0 0 100 100">
+                            <circle class="progress-ring__circle-static" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                            <circle class="progress-ring__circle" stroke-width="20" cx="50" cy="50" r="40" fill="transparent" />
+                        </svg>
+                        <p class="progress-ring__name">Webpack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="address">
+        <div class="contacts">
+            <div class="container">
+                <h2 class="subtitle">Контакты</h2>
+                <div class="contacts__content">
+                    <a href="skype:+380931333239?call" class="contacts__link"><span class="icon-skype contacts__icon"></span></a>
+                    <span>sunburst1715_1</span>
+                </div>
+                <div class="contacts__content">
+                    <a href="mailto:golovchenko.niki@gmail.com" class="contacts__link"><span class="icon-email contacts__icon"></span></a>
+                    <span>golovchenko.niki@gmail.com</span>
+                </div>
+                <div class="contacts__content">
+                    <a href="tel:+380931333239" class="contacts__link"><span class="icon-phone contacts__icon"></span></a>
+                    <span>+3 809 313 332 39</span>
+                </div>
+                <div class="contacts__content">
+                    <a href="https://goo.gl/maps/JNU2mpcqeUWmgAtYA" class="contacts__link" target="_blank"><span class="icon-marker contacts__icon"></span></a>
+                    <span>Харьков</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map" id="map"></div>
+    </section>
 {% endblock %}

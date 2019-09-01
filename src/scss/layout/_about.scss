@@ -1,4 +1,13 @@
 .about {
+    
+    &__me {
+        background-color: $beige;
+        padding-bottom: rem(25px);
+    }
+    
+    &__my-skills {
+        background-color: $white-light;
+    }
 
     &__title {
         font-family: $about-font-family;
@@ -16,6 +25,10 @@
 
     &__text {
         margin-bottom: rem(25px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__progress {
@@ -27,6 +40,7 @@
     &__inner {
         position: relative;
         width: 50%;
+        margin-bottom: rem(30px);
     }
 
     &__item {
@@ -40,5 +54,4 @@
         text-align: center;
         margin-bottom: rem(18px);
     }
-
 }

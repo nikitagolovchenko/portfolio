@@ -54,7 +54,7 @@
     }
 
     &__arrow {
-        z-index: 15;
+        z-index: 100;
         bottom: rem(50px);
         @include center(true, false);
         border: 0;

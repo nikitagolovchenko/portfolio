@@ -1,7 +1,10 @@
 $white:                     #fff;
+$white-light:               #f4f5f0;
 $beige:                     #f2f0e8;
-$gray:                      #474b57;
 $gray-light:                #dfdcd5;
+$gray-medium:               #9fa0a4;
+$gray:                      #474b57;
+$gray-dark:                 #3e4049;
 $blue:                      #165ad1;
 $dark-blue:                 #243994;
 $darken-blue:               #223b65;
@@ -37,6 +40,12 @@ $screen-xl:                 1200px;
 
 // ==================================================
 
+// --- preloader ---
+$count:                     10;
+$time:                      2; //in seconds
+$size:                      100;
+$color:                     $secondary-color;
+
 // --- body ---
 $body-color:                $primary-color;
 $body-font-family:          $font-family-base;
@@ -63,4 +72,13 @@ $triangle-fill:             $beige;
 $about-font-family:         $sansus_webissimo;
 
 // --- progress-ring ---
-$progress-ring-color:      $hover-color;
+$progress-ring-color:       $hover-color;
+
+// --- contacts ---
+$contacts__icon-color:      $blue;
+
+// ---footer --- 
+$footer-color:              $white;
+$footer-top-bg:             $gray-dark;
+$footer-bottom-bg:          $blue;
+$footer-border-color:       $gray-medium;

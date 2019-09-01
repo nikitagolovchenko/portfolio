@@ -1,0 +1,23 @@
+.contacts {
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(10px);
+    }
+    
+    &__link {
+        margin-right: rem(10px);
+        color: $contacts__icon-color;
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: lighten($contacts__icon-color, 12);
+
+        }
+    }
+
+    &__icon {
+        display: block;
+        font-size: rem(35px);
+    }
+}

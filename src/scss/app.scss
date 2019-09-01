@@ -17,14 +17,17 @@
 @import 'layout/header';
 @import 'layout/intro';
 @import 'layout/about';
-// @import 'layout/footer';  
+@import 'layout/footer';  
 
 // components
+@import 'components/preloader';
 @import 'components/socials';
 @import 'components/burger';
 @import 'components/photo1';
 @import 'components/triangle';
 @import 'components/subtitle';
 @import 'components/progress-ring';
+@import 'components/contacts';
+@import 'components/map';
 
 // pages
